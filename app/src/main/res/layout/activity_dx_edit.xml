@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <include layout="@layout/title"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@color/bg_gray"
+            >
+            <TextView
+                android:id="@+id/dx_edit_addresseeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:text="@string/text_dx_addressee"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp_18"
+                />
+            <EditText
+                android:id="@+id/dx_edit_addressee"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/dx_edit_addresseeTv"
+                android:layout_toLeftOf="@+id/dx_edit_addlxr"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:background="@drawable/shape_wd_wdxh"
+                android:hint="@string/text_dx_input_addressee"
+                android:textSize="@dimen/sp_18"
+                android:textColor="@color/text_black"
+                />
+            <ImageView
+                android:id="@+id/dx_edit_addlxr"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:src="@mipmap/ic_launcher"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_80"
+            android:layout_marginBottom="@dimen/dp_20"
+            >
+            <!-- 横向用户集合 -->
+            <com.yhw.alixiaohao.view.HorizontalListView
+                android:id="@+id/dx_edit_lv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <!-- 底部按钮以及 编辑框 -->
+    <RelativeLayout
+        android:id="@+id/dx_info_rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_46"
+        android:background="@color/black"
+        >
+
+        <ImageView
+            android:id="@+id/dx_edit_bottom_leftImg"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <RelativeLayout
+            android:id="@+id/btn_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/dx_info_bottom_leftImg"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            >
+
+            <Button
+                android:id="@+id/dx_edit_btn_send"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_40"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@mipmap/ic_launcher"
+                android:text="发送" />
+
+            <EditText
+                android:id="@+id/dx_edit_message"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_toLeftOf="@id/dx_info_btn_send"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_5"
+                android:background="@color/white"
+                android:singleLine="true"
+                android:textSize="@dimen/sp_18" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/btn_rcd"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_toRightOf="@+id/dx_info_bottom_leftImg"
+            android:background="@color/bg_blue"
+            android:gravity="center"
+            android:text="按住说话"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

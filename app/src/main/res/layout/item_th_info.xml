@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60">
+        <!-- 通话记录详细 -记录通话类型图标 -->
+        <ImageView
+            android:id="@+id/thInfoItemImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:src="@mipmap/wd_icon_rmhd"
+            />
+        <!-- 通话记录详细 -记录通话状态 -->
+        <TextView
+            android:id="@+id/thInfoItemStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_20"
+            android:text="未接通"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/text_huise"
+            />
+        <!-- 通话记录详细 -手机号码 -->
+        <TextView
+            android:id="@+id/thInfoItemTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/thInfoItemImg"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:text="昨天 15:29"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/text_huise"
+            />
+        <View
+            android:id="@+id/thInfoItemHX"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0_5"
+            android:layout_alignParentBottom="true"
+            android:background="@color/huixian"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

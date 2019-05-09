@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/loginPhoneEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入手机号"/>
+
+    <EditText
+        android:id="@+id/loginCodeEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入验证码"
+        android:maxLength="4"
+        />
+
+    <com.yhw.alixiaohao.view.CountdownTextView
+        android:id="@+id/loginGetCodeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_46"
+        android:background="@color/bg_blue"
+        android:text="获取验证码"
+        android:textSize="@dimen/sp_24"
+        />
+
+    <Button
+        android:id="@+id/loginLoginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登陆"
+        />
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--  主页Page  -->
+        <com.yhw.alixiaohao.view.NoScrollViewPager
+            android:id="@+id/main_vp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/main_rg"
+            />
+
+
+        <View
+            android:id="@+id/main_huixian"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/huixian"
+            android:layout_above="@+id/main_rg"
+            />
+        <RadioGroup
+            android:id="@+id/main_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            >
+            <!--  短信  -->
+            <RadioButton
+                android:id="@+id/main_rb_dx"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/text_main_dx"
+                android:textColor="@color/text_huise"
+                android:drawableTop="@drawable/selector_dx"
+                android:drawablePadding="@dimen/dp_3"
+                android:background="@color/white"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:paddingTop="3dp"
+                />
+            <!--  最新通话  -->
+            <RadioButton
+                android:id="@+id/main_rb_th"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/text_main_zxth"
+                android:textColor="@color/text_huise"
+                android:drawableTop="@drawable/selector_th"
+                android:drawablePadding="@dimen/dp_3"
+                android:background="@color/white"
+                android:paddingTop="3dp"
+                />
+            <!--  拨号  clipChildren : 是否允许子View超出父View的范围 Boolean型true 、false ，默认true不允许 -->
+            <RadioButton
+                android:id="@+id/main_rb_bh"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:button="@null"
+                android:clipChildren="false"
+                android:gravity="center|bottom"
+                android:text="@string/text_main_bh"
+                android:textColor="@color/text_huise" />
+            <!--  联系人  -->
+            <RadioButton
+                android:id="@+id/main_rb_lxr"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/text_main_lxr"
+                android:textColor="@color/text_huise"
+                android:drawableTop="@drawable/selector_lxr"
+                android:drawablePadding="@dimen/dp_3"
+                android:background="@color/white"
+                android:paddingTop="3dp"
+                />
+            <!--  我的  -->
+            <RadioButton
+                android:id="@+id/main_rb_wd"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/text_main_wd"
+                android:textColor="@color/text_blue"
+                android:drawableTop="@drawable/selector_wd"
+                android:drawablePadding="@dimen/dp_3"
+                android:background="@color/white"
+                android:checked="true"
+                android:layout_marginRight="@dimen/dp_5"
+                android:paddingTop="3dp"
+                />
+        </RadioGroup>
+        <ImageView
+            android:id="@+id/main_bhBg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_26"
+            android:background="@mipmap/bh_default"
+            />
+    </RelativeLayout>
+
+
+</FrameLayout>

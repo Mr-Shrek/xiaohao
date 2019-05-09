@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/title"/>
+
+
+        <RelativeLayout
+            android:id="@+id/dx_queryRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:id="@+id/dx_queryImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/lxr_query"/>
+            <!-- 搜索输入框 -->
+            <EditText
+                android:id="@+id/dx_queryEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_toRightOf="@+id/dx_queryImg"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="@string/text_dx_search"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/text_huise"
+                android:singleLine="true"
+                android:imeOptions="actionSearch"
+                android:maxLines="1"
+                />
+        </RelativeLayout>
+
+
+        <!-- 最新短信集合 -->
+        <ListView
+            android:id="@+id/dx_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dx_edit"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="@dimen/dp_25"
+        android:layout_marginBottom="@dimen/dp_70"
+        android:src="@mipmap/ic_launcher"
+        />
+
+</FrameLayout>

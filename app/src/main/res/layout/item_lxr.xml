@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+    <!-- 联系人 - 首字母行 -->
+    <TextView
+        android:id="@+id/lxr_item_catalog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray"
+        android:textColor="@color/text_huise"
+        android:textSize="@dimen/sp_14"
+        android:padding="@dimen/dp_10"/>
+
+    <!-- 联系人 - 内容行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:padding="@dimen/dp_10"
+            >
+            <!-- 头像 -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/lxr_item_tx"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_launcher"
+                />
+            <!-- 姓名 -->
+            <TextView
+                android:id="@+id/lxr_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/lxr_item_tx"
+                android:layout_toLeftOf="@+id/lxr_item_follow"
+                android:layout_marginRight="@dimen/dp_10"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/sp_16"
+                />
+            <!-- 标记 -->
+            <ImageView
+                android:id="@+id/lxr_item_follow"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_40"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+        <!-- 分割线 -->
+        <View
+            android:id="@+id/lxr_item_fgx"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0_5"
+            android:background="@color/huixian"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!-- 标题栏 -->
+    <include android:id="@+id/dx_info_title" layout="@layout/title"/>
+
+
+    <!-- 聊天内容 listview -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dx_info_msg_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_weight="1"
+        />
+
+
+    <!-- 底部按钮以及 编辑框 -->
+    <RelativeLayout
+        android:id="@+id/dx_info_rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_46"
+        android:background="@color/black"
+        >
+
+        <ImageView
+            android:id="@+id/dx_info_bottom_leftImg"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <RelativeLayout
+            android:id="@+id/btn_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/dx_info_bottom_leftImg"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            >
+
+            <Button
+                android:id="@+id/dx_info_btn_send"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_40"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@mipmap/ic_launcher"
+                android:text="发送" />
+
+            <EditText
+                android:id="@+id/dx_info_message"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_toLeftOf="@id/dx_info_btn_send"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_5"
+                android:background="@color/white"
+                android:singleLine="true"
+                android:textSize="@dimen/sp_18" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/btn_rcd"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_toRightOf="@+id/dx_info_bottom_leftImg"
+            android:background="@color/bg_blue"
+            android:gravity="center"
+            android:text="按住说话"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</LinearLayout>

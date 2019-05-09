@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_gray"
+    >
+
+    <include layout="@layout/title"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_180"
+        android:layout_marginBottom="@dimen/dp_50"
+        >
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_160"
+            android:background="@color/bg_blue"
+            />
+
+        <TextView
+            android:id="@+id/thInfoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/dp_50"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:textSize="@dimen/sp_32"
+            android:textColor="@color/text_white"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/thInfoTx"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="@dimen/dp_30"
+            android:src="@mipmap/lxr_tx_girl1"
+            />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/thInfoPhone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/thInfoLeftImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:src="@mipmap/wd_icon_rmhd"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_20"
+            android:src="@mipmap/wd_icon_rmhd"
+            />
+        <TextView
+            android:id="@+id/thInfoPhoneTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/thInfoLeftImg"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:text="13883332828"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/text_blue"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:text="通话记录"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/text_huise"
+        />
+    <ListView
+        android:id="@+id/thInfoList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        />
+
+</LinearLayout>

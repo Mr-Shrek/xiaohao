@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+
+    <color name="text_black">#000</color>
+    <color name="text_huise">#848484</color>
+    <color name="text_blue">#5E8CE7</color>
+    <color name="text_white">#fff</color>
+
+    <color name="bg_blue">#2352BC</color>
+
+    <color name="bg_gray">#F4F5F7</color>
+
+    <color name="huixian">#CDCDCD</color>
+
+</resources>

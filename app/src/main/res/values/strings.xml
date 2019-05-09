@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">alixiaohao</string>
+
+
+    <!--  页面：我的  -->
+    <string name="text_wd_show_test">139****1212</string>
+    <string name="text_wd_show_no_number">暂无号码</string>
+    <string name="text_wd_my_func">我的功能</string>
+    <string name="text_wd_mfh">免费呼</string>
+    <string name="text_wd_tjyl">推荐有礼</string>
+    <string name="text_wd_zhcz">账户充值</string>
+    <string name="text_wd_wdhm">我的号码</string>
+    <string name="text_wd_yh">云*号</string>
+    <string name="text_wd_yhzh">优惠组合</string>
+    <string name="text_wd_rmhd">热门活动</string>
+    <string name="text_wd_wdkb">我的卡包</string>
+    <string name="text_wd_jfqd">积分签到</string>
+    <!--  页面：联系人  -->
+    <string name="text_lxr_bj">编辑</string>
+    <string name="text_lxr_bq">标签</string>
+    <string name="text_lxr_tb">同步</string>
+    <string name="text_lxr_ksbh">快速拨号</string>
+    <string name="text_lxr_label">标签</string>
+    <string name="text_lxr_all_label">全部标记</string>
+    <string name="text_lxr_all_cancel">全部取消</string>
+    <string name="text_lxr_followed">已关注</string>
+    <string name="text_lxr_search">搜索联系人</string>
+    <string name="text_lxr_my_card">我的名片</string>
+    <!--  页面：拨号  -->
+    <string name="add_phone">添加号码</string>
+    <!--  页面：短信 -->
+    <string name="text_dx_search">搜索检索内容</string>
+    <string name="text_dx_addressee">收件人</string>
+    <string name="text_dx_input_addressee">请输入收件人</string>
+    <string name="text_dx_new_msg">新信息</string>
+    <!--  页面：主页底部按钮  -->
+    <string name="text_main_wd">我的</string>
+    <string name="text_main_lxr">联系人</string>
+    <string name="text_main_bh">拨号</string>
+    <string name="text_main_zxth">最新通话</string>
+    <string name="text_main_dx">短信</string>
+    
+
+    <!-- common -->
+    <string name="back">返回</string>
+    <string name="cancel">取消</string>
+    <string name="sure">确定</string>
+
+
+    <!--  ====  -->
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--  通讯录集合  -->
+        <ListView
+            android:id="@+id/lxr_label_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            />
+        <!--  通讯录右侧字母导航  -->
+        <com.yhw.alixiaohao.view.SideBar
+            android:id="@+id/lxr_label_sideBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/dp_20"
+            android:textColor="@color/text_huise"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>
