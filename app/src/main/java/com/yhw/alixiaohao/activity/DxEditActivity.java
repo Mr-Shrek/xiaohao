@@ -199,7 +199,6 @@ public class DxEditActivity extends BaseActivity implements TitleManager.OnTitle
 
     }
 
-
     /***************************************************************************************************************
      * 功能：发送短信并监听是否发送成功
      * 参数：num-电话号码	msg-信息内容
