@@ -74,6 +74,9 @@
         <service android:name=".service.MyService"
             android:exported="true"
             android:label="MyService"/>
+
+
+
     </application>
 
 </manifest>
